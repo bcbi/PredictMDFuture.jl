@@ -24,8 +24,8 @@
 ## Transition Plan
 
 Here is the rough plan for transitioning to the new version of PredictMD:
-1. Deprecate the `PredictMDExtra.jl` package
-2. Deprecate the `PredictMDFull.jl` package
-3. Merge the contents of this repository into the `PredictMD.jl` repository
-4. Make a breaking major release of `PredictMD.jl`
-5. Delete this repository
+1. Merge the contents of this repository into the `PredictMD.jl` repository
+2. Delete this repository
+3. Make a breaking major release of `PredictMD.jl`
+4. Deprecate the `PredictMDExtra.jl` package
+5. Deprecate the `PredictMDFull.jl` package
