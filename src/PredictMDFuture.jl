@@ -1,6 +1,5 @@
 module PredictMDFuture
 
-import HealthBase
 import Reexport
 
 Reexport.@reexport using DataFrames
