@@ -10,7 +10,7 @@ import Literate
 import Pkg
 import TOML
 
-const predictmd_directory = PredictMDFuture.predictmd_pkgdir()
+const predictmd_directory = dirname(dirname(pathof(PredictMDFuture)))
 const predictmd_projectfile = joinpath(predictmd_directory, "Project.toml")
 const predictmd_project = TOML.parsefile(predictmd_projectfile)
 const predictmd_direct_deps = predictmd_project["deps"]
