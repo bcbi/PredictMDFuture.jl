@@ -23,7 +23,7 @@ HealthBase = "1"
 MLJ = "0.16"
 PharmaceuticalClassification = "1"
 Reexport = "1"
-StatsBase = "0.32"
+StatsBase = "0.33"
 TextAnalysis = "0.7"
 julia = "1.6"
 
