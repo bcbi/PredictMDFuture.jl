@@ -24,8 +24,8 @@
 ## Transition Plan
 
 Here is the rough plan for transitioning to the new version of PredictMD:
-1. Merge the contents of this repository into the `PredictMD.jl` repository
+1. Merge the contents of the `PredictMDFuture` repository into the [`PredictMD.jl`](https://github.com/bcbi/PredictMD.jl) repository
 2. Make a breaking major release of `PredictMD.jl`
-3. Delete this repository
-5. Deprecate the `PredictMDExtra.jl` package
-6. Deprecate the `PredictMDFull.jl` package
+3. Delete the `PredictMDFuture` repository
+5. Deprecate the [`PredictMDExtra.jl`](https://github.com/bcbi/PredictMDExtra.jl) package
+6. Deprecate the [`PredictMDFull.jl`](https://github.com/bcbi/PredictMDFull.jl) package
