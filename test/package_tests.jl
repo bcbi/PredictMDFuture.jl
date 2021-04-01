@@ -2,7 +2,6 @@
     exclude_from_tests = String[
         "DataFrames",
         "GLM",
-        "StatsBase",
         "TextAnalysis",
     ]
     for name ∈ exclude_from_tests
@@ -10,9 +9,9 @@
     end
     for pkgname ∈ sort(unique(collect(keys(predictmd_direct_deps))))
         pkguuid = predictmd_direct_deps[pkgname]
-        include_this = pkgname ∉ exclude_from_tests
-        this_is_not_stdlib = !Pkg.Types.is_stdlib(Base.UUID(pkguuid))
-        if include_this && this_is_not_stdlib
+        not_excluded = pkgname ∉ exclude_from_tests
+        not_stdlib = !Pkg.Types.is_stdlib(Base.UUID(pkguuid))
+        if not_excluded && not_stdlib
             @time Pkg.test(pkgname; coverage = false)
         end
     end
