@@ -2,7 +2,6 @@
     exclude_from_tests = String[
         "DataFrames",
         "GLM",
-        "StatsBase",
         "TextAnalysis",
     ]
     for name ∈ exclude_from_tests
