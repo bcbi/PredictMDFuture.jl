@@ -14,7 +14,9 @@ makedocs(;
         assets=String[],
     ),
     pages=[
-        "Home" => "index.md",
+        "Home"                => "index.md",
+        "Public API"          => "public.md",
+        "Internals (Private)" => "private.md",
     ],
     strict=true,
 )
