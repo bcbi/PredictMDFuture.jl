@@ -3,11 +3,37 @@ uuid = "bd75750e-4370-432b-86d4-e977ed767637"
 authors = ["Dilum Aluthge", "Brown Center for Biomedical Informatics", "contributors"]
 version = "1.0.0-DEV"
 
-[extras]
-Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+[deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+FHIRClient = "b44d2ca2-8176-4fa9-8684-826e17b2a2da"
+GLM = "38e38edf-8417-5370-95a0-9cbb8c7f171a"
+HealthBase = "94e1309d-ccf4-42de-905f-515f1d7b1cae"
+MLJ = "add582a8-e3ab-11e8-2d5e-e98b27df1bc7"
+PharmaceuticalClassification = "c42eed22-7bfe-405f-8797-8b984d5f7563"
+Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
+TextAnalysis = "a2db99b7-8b79-58f8-94bf-bbc811eef33d"
 
 [compat]
+DataFrames = "0.22.7"
+FHIRClient = "1.0.2"
+GLM = "1.4.1"
+HealthBase = "1.0.1"
+MLJ = "0.16"
+PharmaceuticalClassification = "1.0.1"
+Reexport = "1"
+StatsBase = "0.33.4"
+TextAnalysis = "0.7.2"
 julia = "1.6"
 
+[extras]
+Aqua = "4c88cf16-eb10-579e-8560-4a9242c79595"
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+Literate = "98b081ad-f1c9-55d3-8b20-4c87d4299306"
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
 [targets]
-test = ["Test"]
+test = ["Aqua", "Documenter", "Literate", "Pkg", "TOML", "Test"]
