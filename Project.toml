@@ -1,6 +1,6 @@
 name = "PredictMDFuture"
 uuid = "bd75750e-4370-432b-86d4-e977ed767637"
-authors = ["Dilum Aluthge", "contributors"]
+authors = ["Dilum Aluthge", "Brown Center for Biomedical Informatics", "contributors"]
 version = "1.0.0-DEV"
 
 [extras]

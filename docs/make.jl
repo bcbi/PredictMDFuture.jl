@@ -5,7 +5,7 @@ DocMeta.setdocmeta!(PredictMDFuture, :DocTestSetup, :(using PredictMDFuture); re
 
 makedocs(;
     modules=[PredictMDFuture],
-    authors="Dilum Aluthge, contributors",
+    authors="Dilum Aluthge, Brown Center for Biomedical Informatics, and contributors",
     repo="https://github.com/bcbi/PredictMDFuture.jl/blob/{commit}{path}#{line}",
     sitename="PredictMDFuture.jl",
     format=Documenter.HTML(;
