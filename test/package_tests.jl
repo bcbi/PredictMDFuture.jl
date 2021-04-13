@@ -1,8 +1,14 @@
 @time @testset "Package tests" begin
     exclude_from_tests = String[
+        "Arrow",
+        "CSV",
+        "CUDA",
         "DataFrames",
+        "Flux",
         "GLM",
-        "TextAnalysis",
+        "MLJFlux",
+        "Plots",
+        "UnicodePlots",
     ]
     for name ∈ exclude_from_tests
         @test name ∈ keys(predictmd_direct_deps)
