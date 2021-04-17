@@ -4,12 +4,15 @@
         "CSV",
         "CUDA",
         "DataFrames",
+        "DecisionTree",
         "Flux",
         "GLM",
         "MLJFlux",
         "Plots",
         "UnicodePlots",
     ]
+    @test exclude_from_tests == sort(exclude_from_tests)
+    @test exclude_from_tests == unique(exclude_from_tests)
     for name ∈ exclude_from_tests
         @test name ∈ keys(predictmd_direct_deps)
     end
