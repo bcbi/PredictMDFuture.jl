@@ -1,3 +1,6 @@
 [deps]
 Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
 PredictMDFuture = "bd75750e-4370-432b-86d4-e977ed767637"
+
+[compat]
+Documenter = "0.26"
