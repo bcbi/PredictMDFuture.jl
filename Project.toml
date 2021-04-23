@@ -1,7 +1,7 @@
 name = "PredictMDFuture"
 uuid = "bd75750e-4370-432b-86d4-e977ed767637"
 authors = ["Dilum Aluthge", "Brown Center for Biomedical Informatics", "contributors"]
-version = "1.0.0-DEV"
+version = "2.0.0-DEV"
 
 [deps]
 Arrow = "69666777-d1a9-59fb-9406-91d4454c9d45"
