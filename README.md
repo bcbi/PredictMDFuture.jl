@@ -29,3 +29,52 @@ Here is the rough plan for transitioning to the new version of PredictMD:
 3. Delete the `PredictMDFuture` repository
 5. Deprecate the [`PredictMDExtra.jl`](https://github.com/bcbi/PredictMDExtra.jl) package
 6. Deprecate the [`PredictMDFull.jl`](https://github.com/bcbi/PredictMDFull.jl) package
+
+## How to install PredictMDFuture
+
+Open Julia and run the following commands:
+```julia
+julia> import Pkg
+
+julia> Pkg.activate("PredictMDEnvironment"; shared = true)
+
+julia> Pkg.add(url = "https://github.com/bcbi/PredictMDFuture.jl")
+
+julia> Pkg.pin("PredictMDFuture")
+
+julia> Pkg.precompile()
+```
+
+## How to update PredictMDFuture
+
+Open Julia and run the following commands:
+```julia
+julia> import Pkg
+
+julia> Pkg.activate("PredictMDEnvironment"; shared = true)
+
+julia> Pkg.free("PredictMDFuture")
+
+julia> Pkg.update()
+
+julia> Pkg.pin("PredictMDFuture")
+
+julia> Pkg.precompile()
+```
+
+## Future changes to the "How to install PredictMDFuture" section
+
+In the future, the section will look like this instead:
+
+Open Julia and run the following commands:
+```julia
+julia> import Pkg
+
+julia> Pkg.activate("PredictMDEnvironment"; shared = true)
+
+julia> Pkg.add("PredictMDFuture")
+
+julia> Pkg.pin("PredictMDFuture")
+
+julia> Pkg.precompile()
+```
