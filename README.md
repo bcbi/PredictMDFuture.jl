@@ -38,7 +38,7 @@ julia> import Pkg
 
 julia> Pkg.activate("PredictMDEnvironment"; shared = true)
 
-julia> Pkg.add(url = "https://github.com/bcbi/PredictMDFuture.jl")
+julia> Pkg.add("PredictMDFuture")
 
 julia> Pkg.pin("PredictMDFuture")
 
@@ -56,23 +56,6 @@ julia> Pkg.activate("PredictMDEnvironment"; shared = true)
 julia> Pkg.free("PredictMDFuture")
 
 julia> Pkg.update()
-
-julia> Pkg.pin("PredictMDFuture")
-
-julia> Pkg.precompile()
-```
-
-## Future changes to the "How to install PredictMDFuture" section
-
-In the future, the section will look like this instead:
-
-Open Julia and run the following commands:
-```julia
-julia> import Pkg
-
-julia> Pkg.activate("PredictMDEnvironment"; shared = true)
-
-julia> Pkg.add("PredictMDFuture")
 
 julia> Pkg.pin("PredictMDFuture")
 
