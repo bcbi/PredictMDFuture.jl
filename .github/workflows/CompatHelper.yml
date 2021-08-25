@@ -11,6 +11,7 @@ jobs:
       - uses: JuliaRegistries/compathelper-action@main # TODO: delete this line
         with:
           ssh: ${{ secrets.DOCUMENTER_KEY }}
+          version: '3'
           cmd: |
             entry_type = CompatHelper.DropEntry()
             CompatHelper.main(; entry_type)
