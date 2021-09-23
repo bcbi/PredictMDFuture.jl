@@ -29,7 +29,7 @@ VegaLite = "112f6efa-9a02-5b7d-90c0-432ed331239a"
 
 [compat]
 Aqua = "0.5"
-Arrow = "1"
+Arrow = "2"
 CSV = "0.9"
 CUDA = "3"
 DataFrames = "1"
