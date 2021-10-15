@@ -9,6 +9,7 @@
         "GLM",
         "MLJFlux",
         "Plots",
+        "StatsBase",
         "UnicodePlots",
     ]
     @test exclude_from_tests == sort(exclude_from_tests)
